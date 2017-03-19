@@ -31,7 +31,8 @@ class Student():
         return this_Student.years_UM
 
     # Define the additional method here
-    
+    def write_programs(self, programs = 1):
+        self.num_programs += programs
 
 #### DONE WITH STUDENT CLASS DEFINITION
 
@@ -56,7 +57,13 @@ print("\n\n***** Problem 2 *****")
 ## The function should return the new list of accumulated -- mapped! -- values.
 ## HINT: you should be able to write this in 5 lines of code or fewer! 
 
+def personal_map(func_obj, list_obj):
 
+    my_list = []
+    for x in list_obj:
+        my_list.append(func_obj(i))
+
+    return(my_list)
 
 
 
@@ -74,7 +81,7 @@ def access_third_elem(seq):
 ## End
 
 # Write your equivalent function and assignment statement here
-
+same_func = (lambda sec: seq[2])
 
 ## [PROBLEM 4]
 print("\n\n***** Problem 4 *****")
